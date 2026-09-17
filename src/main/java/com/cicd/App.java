@@ -32,16 +32,14 @@ public class App {
     private static void handleRequest(HttpExchange exchange) throws IOException {
 
         String response =
-                "<html>" +
-                "<head><title>CICD Java Application</title></head>" +
-                "<body>" +
-                "<h1>CICD Java Application</h1>" +
-                "<h2>Application deployed through CI/CD pipeline!</h2>" +
-                "<p>Price: 100.0</p>" +
-                "<p>Quantity: 3</p>" +
-                "<p>Total: 300.0</p>" +
-                "</body>" +
-                "</html>";
+        "<html>" +
+        "<head><title>CICD Java Application</title></head>" +
+        "<body>" +
+        "<h1>CICD Java Application</h1>" +
+        "<h2>Application is running successfully!</h2>" +
+        "<h2>LnT Project - Done by: Vignesh & Neeraja</h2>" +
+        "</body>" +
+        "</html>";
 
         exchange.getResponseHeaders()
                 .set("Content-Type", "text/html");
